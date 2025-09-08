@@ -1,17 +1,5 @@
 * {font-style: roboto;}
 
-header {display: flex;
-justify-content: center;
-align-items: center;
-height: 100px;
-background-color: lightblue;
-font-size: 40px;
-font-weight: bold;
-color: white;
-text-shadow: 2px 2px 4px #000000;
-outline: 2px solid red;
-}
-
 
 nav {
     display: flex;
@@ -20,12 +8,21 @@ nav {
     padding: 0.5em 1em;
     outline: 2px solid red;
     border-radius: 15px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: blue;
+    position: fixed;
+    top: 50px; /* Position below header */
+    left: 0;
+    z-index: 1000; /* Ensures nav stays on top */
 }
 
 .nav-left {
     font-weight: bold;
     font-size: 25px;
     outline: 2px solid red;
+    color: white;
 }
 
 .nav-right {
@@ -35,6 +32,7 @@ nav {
     margin: 0;
     padding: 0;
     outline: 2px solid red;
+    color: white;
 }
 
 ul {display: flex;
@@ -48,16 +46,18 @@ ul {display: flex;
 }
 
 main {display: flex;
-    flex-direction: column;
+flex-direction: column;
 justify-content: center;
 align-items: center;
-height: 685px;
+height: 900px;
 background-color: lightgrey;
 font-size: 30px;
 font-weight: bold;
 color: white;
 text-shadow: 2px 2px 4px #000000;
-outline: 2px solid red;}
+outline: 2px solid red;
+background-color: pink;
+}
 
 h1, p {display: flex;
 justify-content: center;
