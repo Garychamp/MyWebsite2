@@ -8,9 +8,10 @@ nav {
     outline: 2px solid red;
     border-radius: 15px;
     width: 90%;
+    margin-top: 1%;
+    margin-bottom: 0;
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 1%;;
     background-color: blue;
 }
 
@@ -43,7 +44,7 @@ ul {display: flex;
 
 main {display: flex;
 flex-direction: column;
-justify-content: center;
+justify-content: flex-start;
 align-items: center;
 height: 900px;
 background-color: lightgrey;
@@ -52,6 +53,8 @@ font-weight: bold;
 color: white;
 text-shadow: 2px 2px 4px #000000;
 outline: 2px solid red;
+margin-top: -1%;
+padding-top: 1%;
 }
 
 h1, p {display: flex;
