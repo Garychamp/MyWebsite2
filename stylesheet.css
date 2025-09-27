@@ -1,6 +1,5 @@
 * {font-style: roboto;}
 
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -11,11 +10,8 @@ nav {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 1%;;
     background-color: blue;
-    position: fixed;
-    top: 50px; /* Position below header */
-    left: 0;
-    z-index: 1000; /* Ensures nav stays on top */
 }
 
 .nav-left {
@@ -56,7 +52,6 @@ font-weight: bold;
 color: white;
 text-shadow: 2px 2px 4px #000000;
 outline: 2px solid red;
-background-color: pink;
 }
 
 h1, p {display: flex;
