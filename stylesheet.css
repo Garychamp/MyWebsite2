@@ -4,6 +4,18 @@
     font-family: 'Geist', sans-serif;
 }
 
+/* Loading animation styles */
+.loading {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-out;
+}
+
+.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 @keyframes pulse {
     0% {
         outline: 2px solid rgba(255, 255, 255, 0.4);

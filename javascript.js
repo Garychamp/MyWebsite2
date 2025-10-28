@@ -1,5 +1,15 @@
 // Background video controls and accessibility helpers
 document.addEventListener('DOMContentLoaded', function () {
+    // Add loading class to main content
+    const mainContent = document.querySelector('.content');
+    if (mainContent) {
+        mainContent.classList.add('loading');
+        // Add loaded class after a short delay to trigger transition
+        setTimeout(() => {
+            mainContent.classList.add('loaded');
+        }, 100);
+    }
+
     const video = document.getElementById('bg-video');
     const toggle = document.getElementById('video-toggle');
 
