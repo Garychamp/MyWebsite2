@@ -9,22 +9,33 @@
 </head>
 <body>
 
+    <!-- Background video available on all pages -->
+    <video id="bg-video" autoplay muted loop playsinline preload="auto" poster="Media/background.jpg" aria-hidden="true" tabindex="-1"
+           data-mobile-webm="Media/background-mobile.webm" data-mobile-mp4="Media/background-mobile.mp4">
+        <source src="Media/background.webm" type="video/webm">
+        <source src="Media/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div id="bg-overlay" aria-hidden="true" tabindex="-1"></div>
+
+    <main class="content">
+
     <nav>
         <div class="nav-left">Gary Hoare</div>
         <ul class="nav-right">
             <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="connect.html">Connect</a></li>
         </ul>
     </nav>
 
-    <main>
+    <!-- Toggle to pause/play the background video for accessibility/data savings -->
+    <button id="video-toggle" class="video-toggle" aria-pressed="false" aria-label="Pause background video">Pause background</button>
+
         <h1>Under Construction</h1>
- 
+
     </main>
-    
 
-
-    
 </body>
 </html>

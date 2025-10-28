@@ -9,7 +9,19 @@
 </head>
 <body>
 
-    <main>
+    <!-- Background video (autoplay must be muted on most browsers) -->
+    <video id="bg-video" autoplay muted loop playsinline preload="auto" poster="Media/background.jpg" aria-hidden="true" tabindex="-1"
+           data-mobile-webm="Media/background-mobile.webm" data-mobile-mp4="Media/background-mobile.mp4">
+        <source src="Media/background.webm" type="video/webm">
+        <source src="Media/background.mp4" type="video/mp4">
+        <!-- Add additional source tags for other formats if available -->
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Subtle overlay to improve text contrast over video -->
+    <div id="bg-overlay" aria-hidden="true" tabindex="-1"></div>
+
+    <main class="content">
 
     <nav>
         <div class="nav-left">Gary Hoare</div>
@@ -19,6 +31,9 @@
             <li><a href="connect.html">Connect</a></li>
         </ul>
     </nav>
+
+    <!-- Toggle to pause/play the background video for accessibility/data savings -->
+    <button id="video-toggle" class="video-toggle" aria-pressed="false" aria-label="Pause background video">Pause background</button>
 
         <h1>Welcome to MyWebsite2</h1>
         <p>This is the home page of MyWebsite2. Explore our services and learn more about us!</p> 
