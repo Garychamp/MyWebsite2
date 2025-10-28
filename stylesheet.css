@@ -38,6 +38,21 @@ nav {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.home-link {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.home-link:hover {
+    color: #00FFF5;
+    text-shadow: 0 0 10px rgba(0, 255, 245, 0.5);
+}
+
+.home-link:active {
+    transform: scale(0.95);
+}
+
 .nav-right {
     display: flex;
     gap: 1em;
