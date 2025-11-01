@@ -86,7 +86,68 @@ padding-top: 1%;}
         background: linear-gradient(180deg, #00CED1 0%, #00FFF5 100%);
     }
 }
+
+/* About page boxes */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin: 40px auto 60px auto;
+    max-width: 800px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.about-box {
+    background: rgba(0, 206, 209, 0.15);
+    border: 2px solid #00CED1;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    padding: 28px 32px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.about-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0, 206, 209, 0.3);
+    border-color: #00FFF5;
+}
+
+.about-box p {
+    display: block;
+    height: auto;
+    background-color: transparent !important;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #fff;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+    outline: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 * {
     font-family: 'Geist', sans-serif;
@@ -282,7 +343,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 900px;
+    flex: 1;
     background-color: lightgrey;
     font-size: 30px;
     font-weight: bold;
@@ -290,6 +351,7 @@ main {
     text-shadow: 2px 2px 4px #000000;
     margin-top: -1%;
     padding-top: 1%;
+    padding-bottom: 60px;
 }
 
 h1 {
@@ -394,11 +456,6 @@ h3 {
     outline-offset: 2px;
 }
 
-/* Respect users who prefer reduced motion by hiding/pausing moving backgrounds */
-@media (prefers-reduced-motion: reduce) {
-    #bg-video { display: none !important; }
-    #bg-overlay { background: rgba(0,0,0,0.55); }
-}
 
 p1, p2, p3 {display: flex;
 justify-content: center;
