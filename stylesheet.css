@@ -1,3 +1,91 @@
+p1, p2, p3 {display: flex;
+justify-content: center;
+align-items: center;
+height: 50px;
+background-color: black;
+font-size: 25px;
+font-weight: bold;
+color: white;
+text-shadow: 2px 2px 4px #000000;
+outline: 2px solid red;
+margin-top: 1%;
+padding-top: 1%;}
+
+/* Project boxes and connecting line */
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin: 60px 0 40px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.project-box {
+    background: rgba(0, 206, 209, 0.15);
+    border: 2px solid #00CED1;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    padding: 32px 28px 24px 28px;
+    margin: 0 0;
+    min-width: 210px;
+    max-width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.project-box:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 8px 32px #00CED1AA;
+    border-color: #00FFF5;
+}
+.project-icon {
+    display: block;
+    width: 56px;
+    height: 56px;
+    margin-bottom: 12px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 8px #00CED1AA);
+}
+.project-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #00FFF5;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 8px #00000099;
+}
+.project-desc {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 400;
+    text-shadow: 0 1px 4px #00000066;
+}
+.line {
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #00CED1 0%, #00FFF5 100%);
+    border-radius: 2px;
+    margin: 0 0;
+    z-index: 1;
+}
+@media (max-width: 900px) {
+    .projects-container {
+        flex-direction: column;
+    }
+    .line {
+        width: 4px;
+        height: 40px;
+        margin: 0 0;
+        background: linear-gradient(180deg, #00CED1 0%, #00FFF5 100%);
+    }
+}
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap');
 
 * {
