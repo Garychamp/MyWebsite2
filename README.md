@@ -1,2 +1,2 @@
-# MyWebsite2
-Creating a second test website
+# MyWebsite
+Creating my first website after following the Odin Project.
